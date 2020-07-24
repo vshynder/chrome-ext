@@ -1,0 +1,205 @@
+/* Styles for everything */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.ext {
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+    display: flex;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.ext__container {
+    display: flex;
+    position: absolute;
+    width: 1500px;
+    height: 730px;
+    left: 0;
+    transition: 0.2s;
+}
+
+.ext__header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #999999;
+    box-shadow: 0 2px 5px -2px #b8b8b8;
+
+    line-height: 100px;
+    font-size: 42px;
+    color: #414141
+}
+
+.ext__main {
+    width: 100%;
+    height: 630px;
+}
+
+.ext__main-scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    padding: 50px 25px;
+}
+
+
+/* Styles for HomePage*/
+
+.ext__tab-home {
+    width: 500px;
+}
+
+.ext__main-card {
+    min-height: auto;
+    padding: 25px;
+    border: 1px solid #c7c7c7;
+    font-size: 18px;
+
+}
+
+.ext__main-card:not(:last-of-type) {
+    margin-bottom: 25px;
+}
+
+.card__promo {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 25px;
+
+    transition: 0.2s;
+}
+
+.card__promo:hover {
+    cursor: pointer;
+    color: #a32ca3;
+    border-color: #a32ca3;
+}
+
+.card__promo-copy {
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 15px;
+    color: #a32ca3;
+    transition: 0.2s;
+}
+
+/* Styles fro ShopPage */
+
+.ext__tab-shop {
+    width: 500px;
+}
+
+.ext__main-shop--card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ext__main-shop--img {
+    max-height: 70px;
+}
+
+.card__link--shop {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid #c7c7c7;
+    transition: 0.2s;
+}
+
+.card__link--shop:hover {
+    cursor: pointer;
+    color: #a32ca3;
+    border-color: #a32ca3;
+}
+
+/* Styles fro CartPage */
+
+.ext__tab-cart {
+    width: 500px;
+}
+
+.ext__main-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coupons__new {
+    font-size: 24px;
+}
+
+.coupons__add {
+    margin-top: 30px;
+    padding: 15px 60px;
+    color: #ffffff;
+    background: #a32ca3;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.coupons__add:hover {
+    box-shadow: inset 0px 0px 5px 5px #7e227e;
+    cursor: pointer;
+}
+
+/* Styles for Nav */
+
+.ext__nav {
+    width: 100%;
+    height: 70px;
+    margin-top: auto;
+    border-top: 1px solid #999999;
+    box-shadow: 0 -2px 5px -2px #b8b8b8;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__icon {
+    height: 40px;
+    fill: #646464;
+    transition: 0.2s;
+}
+
+.nav__icon:hover {
+    fill: #0f0f0f;
+    cursor: pointer;
+}
+
+/* helpers */
+
+.icon-active {
+    fill: #a32ca3;
+}
+
+.span-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.move-home {
+    left: 0;
+}
+
+.move-shop {
+    left: -500px;
+}
+
+.move-cart {
+    left: -1000px;
+}
