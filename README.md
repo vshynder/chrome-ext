@@ -1,4 +1,4 @@
-# chrome-ext
+# chromext
 
 Сделал Vladyslav Shynder <vl.shynder@gmail.com>
 
